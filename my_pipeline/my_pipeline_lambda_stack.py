@@ -9,5 +9,5 @@ class MyLambdaStack(cdk.Stack):
         Function(self, "LambdaFunction", 
             runtime=Runtime.NODEJS_12_X,
             handler="index.handler",
-            code=InlineCode("exports.handler = _ => 'Hello, CDK';")
+            code=InlineCode("exports.handler = _ => 'Hello, CDK 2';")
         )
